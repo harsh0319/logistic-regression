@@ -7,7 +7,7 @@ import os
 from werkzeug.utils import secure_filename
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Loading saved model from Drive.
-pickle_in = open("/content/drive/MyDrive/model.pkl","rb")
+pickle_in = open("model.pkl","rb")
 model= pickle.load(pickle_in)
 
 html_temp = """
